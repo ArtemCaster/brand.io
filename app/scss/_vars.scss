@@ -1,12 +1,32 @@
 //цвета
-$default: #7b7b7b;
-$title: #1a1a1a;
-
+$default: #425466;
+$title: #313131;
+$green: #0ac05e;
 
 //расширения шрифтов
-%DMSans-700 {
-  font-family: "DMSans-Bold", sans-serif;
+%pop-400 {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
+}
+%pop-500 {
+  font-family: "Poppins-Medium", sans-serif;
+  font-weight: 500;
+}
+%pop-700 {
+  font-family: "Poppins-Bold", sans-serif;
   font-weight: 700;
+}
+%pop-800 {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-weight: 800;
+}
+%int-700 {
+  font-family: "Inter-bold", sans-serif;
+  font-weight: 700;
+}
+%int-800 {
+  font-family: "Inter-SemiBold", sans-serif;
+  font-weight: 800;
 }
 
 //наследования
@@ -15,7 +35,7 @@ $title: #1a1a1a;
   margin: 0 auto;
 }
 
-%check-none{
+%check-none {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -29,5 +49,9 @@ $title: #1a1a1a;
   justify-content: center;
 }
 
-
-
+%title {
+  @extend %pop-500;
+  font-size: 40px;
+  line-height: 48px;
+  color: $title;
+}

@@ -1,0 +1,27 @@
+.brands {
+  margin-top: 16px;
+
+  &__list {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    padding: 80px 0;
+  }
+}
+
+
+@media (max-width: 970px){
+  .brands{
+    .container{
+      padding: 0;
+    }
+
+    &__list{
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+  }
+}

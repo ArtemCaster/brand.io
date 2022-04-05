@@ -1,44 +1,103 @@
 body {
-  @extend %DMSans-700;
-  font-size: 14px;
-  line-height: 24px;
+  @extend %pop-400;
+  font-size: 16px;
+  line-height: 30px;
   color: $default;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  background-color: #FAFAFA;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: calc(1170px + 30px);
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.h1{
-
+.btn {
+  display: inline-block;
+  @extend %pop-400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  padding: 15px 40px;
+  background: $green;
+  box-shadow: 0px 100px 80px rgba(56, 56, 56, 0.1), 0px 64.8148px 46.8519px rgba(56, 56, 56, 0.0759259),
+    0px 38.5185px 25.4815px rgba(56, 56, 56, 0.0607407), 0px 20px 13px rgba(56, 56, 56, 0.05),
+    0px 8.14815px 6.51852px rgba(56, 56, 56, 0.0392593), 0px 1.85185px 3.14815px rgba(56, 56, 56, 0.0240741);
+  border: none;
+  cursor: pointer;
 }
 
-.h2{
-
+.social{
+  display: flex;
+  column-gap: 18px;
 }
 
-.h3{
-
+.bg-dots{
+  position: absolute;
+  z-index: -1;
 }
 
-.h4{
-
+.burger-btn{
+  background-color: $green;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 100px 80px rgba(56, 56, 56, 0.1), 0px 64.8148px 46.8519px rgba(56, 56, 56, 0.0759259),
+  0px 38.5185px 25.4815px rgba(56, 56, 56, 0.0607407), 0px 20px 13px rgba(56, 56, 56, 0.05),
+  0px 8.14815px 6.51852px rgba(56, 56, 56, 0.0392593), 0px 1.85185px 3.14815px rgba(56, 56, 56, 0.0240741);
+  position: absolute;
+  cursor: pointer;
+  top: 15%;
+  right: 0;
+  transform: translateX(100%);
+  padding: 15px 0px;
+  display: none;
+  opacity: 0.8;
+  transition: all 0.5;
+  z-index: 11;
+  
+  p{
+    writing-mode:vertical-rl;
+  }
+  
+  &--active{
+    opacity: 1;
+    span{
+    transform: rotate(30deg);
+    }
+  }
 }
 
-.h5{
 
+@media (max-width: 1400px){
+  .container{
+    max-width: 1000px;
+  }
+
+  body{
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .btn{
+    font-size: 12px;
+    line-height: 24px;
+    padding: 10px 30px;
+  }
 }
 
-.h6{
-
+@media (max-width: 790px){
+  .burger-btn{
+    display: flex;
+  }
 }
 
-.title{
-
+@media (max-width: 480px){
+  body{
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
