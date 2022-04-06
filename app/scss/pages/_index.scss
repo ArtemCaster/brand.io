@@ -164,6 +164,7 @@
 
 .how-work {
   margin-bottom: 165px;
+  overflow: hidden;
 
   & .container {
     max-width: 1059px;
@@ -277,12 +278,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 1.5s;
 
-    &:first-child {
+    &.wow{
+      border: transparent;
+      opacity: 0;
+    }
+
+    &.animate__animated {
       background: #ffffff;
       box-shadow: 0px 38.5185px 25.4815px rgba(56, 56, 56, 0.0607407), 0px 20px 13px rgba(56, 56, 56, 0.05),
         0px 8.14815px 6.51852px rgba(56, 56, 56, 0.0392593), 0px 1.85185px 3.14815px rgba(56, 56, 56, 0.0240741);
       border-color: transparent;
+      opacity: 1;
     }
 
     &-title {

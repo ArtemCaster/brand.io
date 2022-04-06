@@ -18,12 +18,15 @@
   &__form{
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    
 
     &-input{
       border: transparent;
       padding: 26px 28px;
       max-width: 350px;
       width: 100%;
+      z-index: 1;
     }
   }
 }

@@ -40,9 +40,19 @@
 }
 
 .anim-time-05{
-  --animate-duration: .5s;
+  --animate-duration: 5s;
 }
 
 
 
+.brands__item{
+  animation: fadeInLeft;
+}
 
+
+
+@media (max-width: 970px){
+  .brands__item{
+    animation: fadeIn;
+  }
+}

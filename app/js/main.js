@@ -3,9 +3,9 @@ $(function () {
   wow = new WOW(
     {
       boxClass: 'wow',
-      animateClass: 'animate__animated --active',
-      offset: 300,
-      mobile: false,
+      animateClass: 'animate__animated',
+      offset: 120,
+      // mobile: false,
     }
   )
 

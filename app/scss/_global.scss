@@ -10,6 +10,10 @@ body {
   background-color: #FAFAFA;
 }
 
+.main{
+  overflow: hidden;
+}
+
 .container {
   max-width: calc(1170px + 30px);
   margin: 0 auto;
@@ -53,7 +57,7 @@ body {
   top: 15%;
   right: 0;
   transform: translateX(100%);
-  padding: 15px 0px;
+  padding: 15px 5px;
   display: none;
   opacity: 0.8;
   transition: all 0.5;
